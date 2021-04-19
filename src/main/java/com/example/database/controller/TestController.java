@@ -18,9 +18,9 @@ public class TestController {
 
     @RequestMapping(value = "/test")
     @ResponseBody
-    public Object test() {
-        userService.update(102);
-        return personMapper.getPerson(102);
+    public Object test(Integer id) {
+        userService.update(id);
+        return personMapper.getPerson(id);
     }
 
     @RequestMapping(value = "/index")
