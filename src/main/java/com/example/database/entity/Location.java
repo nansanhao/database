@@ -2,14 +2,14 @@ package com.example.database.entity;
 
 public class Location {
     private Integer id;
-    private String name;
+    private String locationName;
 
     public Location() {
     }
 
-    public Location(Integer id, String name) {
+    public Location(Integer id, String locationName) {
         this.id = id;
-        this.name = name;
+        this.locationName = locationName;
     }
 
     public Integer getId() {
@@ -20,11 +20,11 @@ public class Location {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getLocationName() {
+        return locationName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLocationName(String locationName) {
+        this.locationName = locationName;
     }
 }

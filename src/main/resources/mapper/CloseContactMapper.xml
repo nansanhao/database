@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.database.mapper.CloseContactMapper">
     <select id="queryPersonList" resultType="com.example.database.entity.Person">
-        SELECT person.id, person.name, person.telephone
+        SELECT person.id, person.fullname, person.telephone
         FROM close_contact
                  LEFT JOIN person ON close_contact.p_id = person.id
         WHERE case_p_id = #{caseId}
     </select>
     <select id="queryStartPersonList" resultType="com.example.database.entity.Person">
-        SELECT person.id, person.name, person.telephone
+        SELECT person.id, person.fullname, person.telephone
         FROM close_contact
                  LEFT JOIN person ON close_contact.p_id = person.id
         WHERE case_p_id IS NULL

@@ -8,5 +8,5 @@ public class IsolationRecord {
     private Date sDate;
     private Date eDate;
     private Integer isolLocId;
-    private Integer status;
+    private Integer state;
 }

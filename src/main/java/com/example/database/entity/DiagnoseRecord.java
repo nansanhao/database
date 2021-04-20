@@ -5,6 +5,6 @@ import java.util.Date;
 public class DiagnoseRecord {
     private Integer id;
     private Integer pId;
-    private Date date;
+    private Date datetime;
     private Integer result;
 }

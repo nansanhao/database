@@ -2,16 +2,16 @@ package com.example.database.entity;
 
 public class Person {
     private Integer id;
-    private String name;
+    private String fullname;
     private String telephone;
 
 
     public Person() {
     }
 
-    public Person(Integer id, String name, String telephone) {
+    public Person(Integer id, String fullname, String telephone) {
         this.id = id;
-        this.name = name;
+        this.fullname = fullname;
         this.telephone = telephone;
     }
 
@@ -19,7 +19,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", fullname='" + fullname + '\'' +
                 ", telephone='" + telephone + '\'' +
                 '}';
     }
@@ -32,12 +32,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public String getTelephone() {

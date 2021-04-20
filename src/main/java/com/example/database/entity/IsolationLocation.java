@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class IsolationLocation {
     private Integer id;
-    private Integer pId;
-    private Date sDate;
+    private String locationName;
+    private Integer capacity;
 
 }
