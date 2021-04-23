@@ -5,7 +5,7 @@ import java.util.Date;
 public class CloseContact {
     private Integer id;
     private Integer pId;
-    private Date date;
+    private Date datetime;
     private Integer locId;
     private Integer casePId;
 
@@ -18,7 +18,7 @@ public class CloseContact {
     }
 
     public Date getDate() {
-        return date;
+        return datetime;
     }
 
     public Integer getLocId() {
